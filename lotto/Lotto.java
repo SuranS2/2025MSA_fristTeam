@@ -4,7 +4,7 @@ public class Lotto {
 	private int[] randNums; //로또 번호
 	
 	Lotto(){
-		randNums = new int[] {1,2,3,4,5,6};
+		randNums = new int[6];
 	}
 	
 	// 번호 출력

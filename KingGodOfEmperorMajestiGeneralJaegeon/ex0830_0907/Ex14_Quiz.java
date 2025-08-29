@@ -1,4 +1,4 @@
-package KingGodOfEmperorMajestiGeneralJaegeon;
+package KingGodOfEmperorMajestiGeneralJaegeon.ex0830_0907;
 
 public class Ex14_Quiz {
 
