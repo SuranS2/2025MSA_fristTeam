@@ -21,7 +21,6 @@ public class Lotto {
 
     // 랜덤 번호 최대 45번 까지 추출
     public int[] pickSixRandomNumbers() {
-        System.out.println("1111111");
         for (int i = 0; i < randNums.length; i++) {
             n = i;
             randNums[i] = (int) (Math.random() * 45) + 1;
