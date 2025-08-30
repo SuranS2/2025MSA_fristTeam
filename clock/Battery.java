@@ -6,15 +6,16 @@ public class Battery {
 	private int chargingPercent; // 0~100
 	public Battery(BatteryCell[] cells){
 		this.cells = cells;
+		this.SerialNumber = initSerial();
 	}
 	private String initSerial() {
-		// ÀÌ´Ö½Ã¸®¾ó °øÀ¯
-		return null;
+		// ï¿½Ì´Ö½Ã¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		return UUID.randomUUID().toString().replace("-", "").substring(0,10);
 	}
 	public void charging(Battery battery) {
 		if(0<= battery.chargingPercent && battery.chargingPercent <=95 ) {
-			battery.cells += 5;
-			System.out.println("5%ÃæÀü... ÇöÀç ÃæÀü·®" + battery.cells);
+			battery.chargingPercent += 5;
+			System.out.println("5%ï¿½ï¿½ï¿½ï¿½... ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + battery.chargingPercent);
 		}
 	}
 	public void change(Battery battery) {
