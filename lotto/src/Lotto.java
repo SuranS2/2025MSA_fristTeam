@@ -1,3 +1,5 @@
+package lotto.src;
+
 import java.util.Random;
 
 public class Lotto {

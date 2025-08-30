@@ -1,28 +1,28 @@
-import kr.or.kosa.Car;
-import kr.or.kosa.Emp;
-// ÆÐÅ°Áö È¤Àº ³×ÀÓ½ºÆäÀÌ½º¶ó°í ºÎ¸§
-
-public class Ex01 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello");
-		//¸ðµç Å¬·¡½º´Â ¸Þ¸ð¸®¿¡ ¿Ã¶ó°¡¾ß »ç¿ë°¡´É
-		//Çö½Ç ¾ÆÆÄÆ® ¼³°èµµ ( Á¾ÀÌ) ±¸Ã¼È­ > ¶¥ ÁýÀ» Áþ´Â °Í > ÁÖ¼Ò °Ç¹°
-		
-		int i= 10;
-		Emp e = new Emp();
-		e.empno =7788;
-		e.ename = "È«±æµ¿";
-		e.Info();
-		//¸Þ¸ð¸®¿¡ ÇÒ´ç
-		Car bmwCar = new Car();
-		//½ºÆ®¸µ Å¬·¡½º¶ó¼­ null, boolean false, int´Â 0
-		bmwCar.carInfoPrint();
-		
-		bmwCar.setDoor(2);
-		bmwCar.setColor("RED");
-		bmwCar.carInfoPrint();
-	}
-
-}
+//import kr.or.kosa.Car;
+//import kr.or.kosa.Emp;
+//// ï¿½ï¿½Å°ï¿½ï¿½ È¤ï¿½ï¿½ ï¿½ï¿½ï¿½Ó½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ï¿½ ï¿½Î¸ï¿½
+//
+//public class Ex01 {
+//
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		System.out.println("Hello");
+//		//ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ð¸®¿ï¿½ ï¿½Ã¶ó°¡¾ï¿½ ï¿½ï¿½ë°¡ï¿½ï¿½
+//		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½èµµ ( ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½Ã¼È­ > ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ > ï¿½Ö¼ï¿½ ï¿½Ç¹ï¿½
+//
+//		int i= 10;
+//		Emp e = new Emp();
+//		e.empno =7788;
+//		e.ename = "È«ï¿½æµ¿";
+//		e.Info();
+//		//ï¿½Þ¸ð¸®¿ï¿½ ï¿½Ò´ï¿½
+//		Car bmwCar = new Car();
+//		//ï¿½ï¿½Æ®ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ null, boolean false, intï¿½ï¿½ 0
+//		bmwCar.carInfoPrint();
+//
+//		bmwCar.setDoor(2);
+//		bmwCar.setColor("RED");
+//		bmwCar.carInfoPrint();
+//	}
+//
+//}

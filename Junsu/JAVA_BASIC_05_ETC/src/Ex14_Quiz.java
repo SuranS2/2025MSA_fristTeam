@@ -1,18 +1,18 @@
-class Ssystem{
-	static final Out out; // ÃÊ±âÈ­°¡ µÇ¾îÀÖÁö ¾Ê¾Æ¼­ NullPointException ³ª¿È
-}
-class Out{
-	void println(String s) {
-		System.out.println(s);
-	}
-	void println(int i) {
-		System.out.println(i);
-	}
-}
-public class Ex14_Quiz {
-	public static void main(String[] args) {
-		System.out.println("¾î¶² ÇÔ¼ö¾ß");
-		System.out.println(100);
-		Ssystem.out.println(123);
-	}
-}
+//class Ssystem{
+//	static final Out out; // ï¿½Ê±ï¿½È­ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¾Æ¼ï¿½ NullPointException ï¿½ï¿½ï¿½ï¿½
+//}
+//class Out{
+//	void println(String s) {
+//		System.out.println(s);
+//	}
+//	void println(int i) {
+//		System.out.println(i);
+//	}
+//}
+//public class Ex14_Quiz {
+//	public static void main(String[] args) {
+//		System.out.println("ï¿½î¶² ï¿½Ô¼ï¿½ï¿½ï¿½");
+//		System.out.println(100);
+//		Ssystem.out.println(123);
+//	}
+//}

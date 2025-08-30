@@ -1,74 +1,74 @@
-
-public class Ex06_String_Method {
-
-	public static void main(String[] args) {
-		String str = "hello";
-		String concatstr = str.concat(" world"); //µÎ °³¸¦ ÀÌ¾î »õ·Î¿î ¹®ÀÚ¿­ »ý¼º
-		System.out.println(concatstr); // hello world;
-		
-		System.out.println(str.contains("ello") ); //CharSequence s = ¹®ÀÚÀÇ ¹è¿­ À» Æ÷ÇÔÇÏ´ÂÁö? 
-		String str2 = "a b c d"; // [a][ ][b][ ][c][ ][d]
-		System.out.println(str2.length()); // 7
-		
-		String filename ="hello java world";
-		System.out.println(filename.indexOf("e")); //indexOf overloading µÈ ¸Þ¼­µå Ã¹ ¹øÂ°ºÎÅÍ Å½»öÇØ¼­ ¹®ÀÚ ÀÎµ¦½º Å½»ö 1
-		System.out.println(filename.indexOf("java")); //¹®ÀÚ ½ÃÄö½ºµµ ¹ÞÀ» ¼ö ÀÖÀ½ 
-		System.out.println(filename.indexOf("kava")); // ¹è¿­ ÇÔ¼ö °ªÀÌ ¾ø´Ù¸é -1
-		if(filename.indexOf("wo") != -1) {
-			System.out.println("wo°¡ ÇÏ³ª¶óµµ ÀÖ´Ù");
-		}
-		
-		// Æ¯Á¤ ¹®Àå¿¡¼­ ³»°¡ ¿øÇÏ´Â ´Ü¾îÀÇ Æ÷ÇÔ¿©ºÎ¸¦ È®ÀÎ
-		//¹è¿­ ÇÔ¼ö °ªÀÌ ¾ø´Ù¸é -1
-		
-		System.out.println(filename.lastIndexOf("a")); // µÚ¿¡¼­ºÎÅÍ ¸¸³­ °Í ÀÎµ¦½º 0~ºÎÅÍ °Å¸® 9
-		
-		String file = "home.jpg";
-		int dotIndex = file.lastIndexOf(".");
-		String filename2 = file.substring(0,dotIndex);
-		String extention = file.substring(dotIndex+1);
-		System.out.println(filename2 + "."  + extention);
-		
-		String str4 = "½´Æì¸Ç, ÆÒÆ¼, ³ë¶û»ö, ÆÄ¶õ»ö, »¡°£»ö";
-		//"½´Æì¸Ç, ÆÒÆ¼, ³ë¶û»ö.ÆÄ¶õ»ö, »¡°£»ö";   , . ·Î ±¸ºÐÇÏ·Á¸é StringTokenizer Å¬·¡½º »ç¿ëÇØ¾ßÇÔ
-		String[] namearray = str4.split(",");
-		for(String s : namearray){
-			System.out.println(s);
-		}
-		// ½´ÆÛ¸Ç
-		// ÆÒÆ¼
-		// ³ë¶û»ö
-		// ÆÄ¶õ»ö
-		// »¡°£»ö
-		String str5 = "½´Æì¸Ç.ÆÒÆ¼.³ë¶û»ö.ÆÄ¶õ»ö.»¡°£»ö";
-		String[] namearray2 = str5.split(".");
-		for(String s : namearray2){
-			System.out.println(s);
-		}
-		String ip = "192.168.0.0";
-		String [] iparray = ip.split("\\.");
-		for(String s : iparray){
-			System.out.println(s);
-		}
-		string
-		int sum = 0;
-		String[] numarr = {"1", "2", "3", "4"};
-		// ¹è¿­ÀÇ ÃÑÇÕ (1+2+3+4)
-		for(String s : numarr){
-			sum+=Integer.parseInt(s);
-		}
-		System.out.println(sum);
-
-		//2
-		String jumin = "123456-1234567";
-		// ÁÖ¹Îµî·Ï¹øÈ£ÀÇ ÇÕ 1+2+3+4+5+6+1+2+3+4+5+6+7
-		sum = 0;
-		for(String splitBig : jumin.split("-")){
-			for(String splitEach : splitBig.split("") ) {
-				sum+= Integer.parseInt(splitEach );
-			}
-		}
-		System.out.println(sum);
-		
-	}
-}
+//
+//public class Ex06_String_Method {
+//
+//	public static void main(String[] args) {
+//		String str = "hello";
+//		String concatstr = str.concat(" world"); //ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+//		System.out.println(concatstr); // hello world;
+//
+//		System.out.println(str.contains("ello") ); //CharSequence s = ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½?
+//		String str2 = "a b c d"; // [a][ ][b][ ][c][ ][d]
+//		System.out.println(str2.length()); // 7
+//
+//		String filename ="hello java world";
+//		System.out.println(filename.indexOf("e")); //indexOf overloading ï¿½ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½ Ã¹ ï¿½ï¿½Â°ï¿½ï¿½ï¿½ï¿½ Å½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ Å½ï¿½ï¿½ 1
+//		System.out.println(filename.indexOf("java")); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//		System.out.println(filename.indexOf("kava")); // ï¿½è¿­ ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½ -1
+//		if(filename.indexOf("wo") != -1) {
+//			System.out.println("woï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½");
+//		}
+//
+//		// Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½Î¸ï¿½ È®ï¿½ï¿½
+//		//ï¿½è¿­ ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½ -1
+//
+//		System.out.println(filename.lastIndexOf("a")); // ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ 0~ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ 9
+//
+//		String file = "home.jpg";
+//		int dotIndex = file.lastIndexOf(".");
+//		String filename2 = file.substring(0,dotIndex);
+//		String extention = file.substring(dotIndex+1);
+//		System.out.println(filename2 + "."  + extention);
+//
+//		String str4 = "ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Æ¼, ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Ä¶ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+//		//"ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Æ¼, ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½Ä¶ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";   , . ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ StringTokenizer Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½
+//		String[] namearray = str4.split(",");
+//		for(String s : namearray){
+//			System.out.println(s);
+//		}
+//		// ï¿½ï¿½ï¿½Û¸ï¿½
+//		// ï¿½ï¿½Æ¼
+//		// ï¿½ï¿½ï¿½ï¿½ï¿½
+//		// ï¿½Ä¶ï¿½ï¿½ï¿½
+//		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//		String str5 = "ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½Æ¼.ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½Ä¶ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+//		String[] namearray2 = str5.split(".");
+//		for(String s : namearray2){
+//			System.out.println(s);
+//		}
+//		String ip = "192.168.0.0";
+//		String [] iparray = ip.split("\\.");
+//		for(String s : iparray){
+//			System.out.println(s);
+//		}
+//		string
+//		int sum = 0;
+//		String[] numarr = {"1", "2", "3", "4"};
+//		// ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (1+2+3+4)
+//		for(String s : numarr){
+//			sum+=Integer.parseInt(s);
+//		}
+//		System.out.println(sum);
+//
+//		//2
+//		String jumin = "123456-1234567";
+//		// ï¿½Ö¹Îµï¿½Ï¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ 1+2+3+4+5+6+1+2+3+4+5+6+7
+//		sum = 0;
+//		for(String splitBig : jumin.split("-")){
+//			for(String splitEach : splitBig.split("") ) {
+//				sum+= Integer.parseInt(splitEach );
+//			}
+//		}
+//		System.out.println(sum);
+//
+//	}
+//}
