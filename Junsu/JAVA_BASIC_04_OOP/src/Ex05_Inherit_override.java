@@ -1,22 +1,22 @@
-import kr.or.kosa.Emp;
-
-class Test2{
-	int x = 100;
-	void print() {
-		System.out.println("ºÎ¸ðÇÔ¼ö Test2");
-	}
-}
-class Test3 extends Test2{
-	int x = 300; // ¸â¹öÇÊµå ¼û±â±â, ºÎ¸ð ¹«½ÃÇÏ±â(¾²Áö ¸»±æ)
-}
-public class Ex05_Inherit_override {
-
-	public static void main(String[] args) {
-		Test3 test3 = new Test3();
-		System.out.println(test3.x); // 300
-		
-		Emp emp = new Emp(7788, "smith");
-		System.out.println(emp); // .ToString() »ý·«
-		System.out.println(emp.toString());
-	}
-}
+//import kr.or.kosa.Emp;
+//
+//class Test2{
+//	int x = 100;
+//	void print() {
+//		System.out.println("ï¿½Î¸ï¿½ï¿½Ô¼ï¿½ Test2");
+//	}
+//}
+//class Test3 extends Test2{
+//	int x = 300; // ï¿½ï¿½ï¿½ï¿½Êµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Î¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½(ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
+//}
+//public class Ex05_Inherit_override {
+//
+//	public static void main(String[] args) {
+//		Test3 test3 = new Test3();
+//		System.out.println(test3.x); // 300
+//
+//		Emp emp = new Emp(7788, "smith");
+//		System.out.println(emp); // .ToString() ï¿½ï¿½ï¿½ï¿½
+//		System.out.println(emp.toString());
+//	}
+//}

@@ -1,40 +1,40 @@
-class Human{
-	String name;
-}
-class OverClass{
-	int add(int i, int j) {
-		return i + j;
-	}
-	void add(Human human) { // Human °´Ã¼ÀÇ ÁÖ¼Ò°ªÀ» ¹Þ°Ú´Ù => new ·Î »ý¼ºµÈ °Í
-		/*
-		 * 1. add(new Hauman())
-		 * 2. Human h = new Human(); add(h);
-		 * ÀÌ µÎ °¡Áö´Â ±âº»ÀûÀ¸·Î ¹«Á¶°£ È°¿ëÇÒ ÁÙ ¾Ë¾Æ¾ßÇÔ
-		 */
-		System.out.println(human.name);
-	}
-	int add(int param) {
-		return param + 100;
-	}
-	//Point
-	int[] add(int[] params) { // Áö¿ªº¯¼ö params , target => stack¿¡ »ý¼ºµÊ
-		int[] target = new int[params.length]; // targetÀÌ¶ó´Â ÀÌ¸§À¸·Î heap¿¡ °´Ã¼°¡ »ý¼ºµÇ¾úÀ½
-		for(int i = 0; i < target.length ; i++){
-			target[i] = params[i] + 1;
-		}
-		return target; // ¹è¿­Àº °´Ã¼, ¸®ÅÏ ÈÄ stack Á¦°Å - Èü ¸Þ¸ð¸®ÀÇ targetÀº °¡ºñÁö ÄÃ·ºÅÍ·Î
-	}
-	
-}
-public class Ex07_Array_Method {
-
-	public static void main(String[] args) {
-		OverClass overclass = new OverClass();
-		int[] source = {10,20,30,40,50};
-		// overclass.add(int[] params); // ÀÎÆ® ¹è¿­À» ´øÁ®Áà¾ßÇÑ´Ù => ÀÎÆ® ¹è¿­À» »ý¼ºÇØ¾ß°Ú±¸³ª
-		int[] ta = overclass.add(source);
-		for(int value : ta) {
-			System.out.println(value);
-		}	
-	}
-}
+//class Human{
+//	String name;
+//}
+//class OverClass{
+//	int add(int i, int j) {
+//		return i + j;
+//	}
+//	void add(Human human) { // Human ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ö¼Ò°ï¿½ï¿½ï¿½ ï¿½Þ°Ú´ï¿½ => new ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+//		/*
+//		 * 1. add(new Hauman())
+//		 * 2. Human h = new Human(); add(h);
+//		 * ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ë¾Æ¾ï¿½ï¿½ï¿½
+//		 */
+//		System.out.println(human.name);
+//	}
+//	int add(int param) {
+//		return param + 100;
+//	}
+//	//Point
+//	int[] add(int[] params) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ params , target => stackï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//		int[] target = new int[params.length]; // targetï¿½Ì¶ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ heapï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½
+//		for(int i = 0; i < target.length ; i++){
+//			target[i] = params[i] + 1;
+//		}
+//		return target; // ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½Ã¼, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ stack ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ ï¿½Þ¸ï¿½ï¿½ï¿½ targetï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Í·ï¿½
+//	}
+//
+//}
+//public class Ex07_Array_Method {
+//
+//	public static void main(String[] args) {
+//		OverClass overclass = new OverClass();
+//		int[] source = {10,20,30,40,50};
+//		// overclass.add(int[] params); // ï¿½ï¿½Æ® ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½ => ï¿½ï¿½Æ® ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ß°Ú±ï¿½ï¿½ï¿½
+//		int[] ta = overclass.add(source);
+//		for(int value : ta) {
+//			System.out.println(value);
+//		}
+//	}
+//}

@@ -1,51 +1,51 @@
-import kr.or.kosa.Apt;
-
-class Base{
-	String basename;
-	Base(){
-		System.out.println("ºÎ¸ðÀÇ ±âº» »ý¼ºÀÚ");
-	
-	}
-	Base(String basename){
-		this.basename = basename;
-		System.out.println("basename: " + basename);
-	}
-	void method(){
-		System.out.println("ºÎ¸ð method");
-	}
-}
-
-class Derived extends Base{
-	String dname;
-	Derived(){
-		System.out.println("ÀÚ½Ä Å¬·¡½º ±âº» »ý¼ºÀÚ");
-	}
-	Derived(String dname){
-	
-		super(dname); // ºÎ¸ðÀÇ »ý¼ºÀÚ¸¦ È£ÃâÇÏ´Â super()
-		this.dname = dname;
-		System.out.println("dname : " + this.dname);
-	}
-	@Override
-	void method(){
-		System.out.println("ºÎ¸ð method¸¦ ÀçÁ¤ÀÇÇÏ¿´À½");
-	}
-	void parantMethod(){
-		super.method(); // ºÎ¸ð ÀÚ¿ø¿¡ Á¢±Ù
-	}
-}
-
-
-public class Ex06_Inherit_super {
-
-	public static void main(String[] args) {
-//		Derived d = new Derived();
-		Derived d = new Derived("È«±æµ¿");
-		d.method(); // ÀÚ½ÄÀÇ ¸Þ¼­µå°¡ È£ÃâµÊ
-		d.parantMethod();
-		
-		Apt apt = new Apt();
-		apt.setDoor(1000);
-		System.out.println(apt.getDoor());
-	}
-}
+//import kr.or.kosa.Apt;
+//
+//class Base{
+//	String basename;
+//	Base(){
+//		System.out.println("ï¿½Î¸ï¿½ï¿½ï¿½ ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+//
+//	}
+//	Base(String basename){
+//		this.basename = basename;
+//		System.out.println("basename: " + basename);
+//	}
+//	void method(){
+//		System.out.println("ï¿½Î¸ï¿½ method");
+//	}
+//}
+//
+//class Derived extends Base{
+//	String dname;
+//	Derived(){
+//		System.out.println("ï¿½Ú½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+//	}
+//	Derived(String dname){
+//
+//		super(dname); // ï¿½Î¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ È£ï¿½ï¿½ï¿½Ï´ï¿½ super()
+//		this.dname = dname;
+//		System.out.println("dname : " + this.dname);
+//	}
+//	@Override
+//	void method(){
+//		System.out.println("ï¿½Î¸ï¿½ methodï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½");
+//	}
+//	void parantMethod(){
+//		super.method(); // ï¿½Î¸ï¿½ ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	}
+//}
+//
+//
+//public class Ex06_Inherit_super {
+//
+//	public static void main(String[] args) {
+////		Derived d = new Derived();
+//		Derived d = new Derived("È«ï¿½æµ¿");
+//		d.method(); // ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½Þ¼ï¿½ï¿½å°¡ È£ï¿½ï¿½ï¿½
+//		d.parantMethod();
+//
+//		Apt apt = new Apt();
+//		apt.setDoor(1000);
+//		System.out.println(apt.getDoor());
+//	}
+//}

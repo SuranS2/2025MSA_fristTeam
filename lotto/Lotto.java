@@ -3,13 +3,13 @@ package lotto;
 public class Lotto {
 	public int[] randNums; //로또 번호
 	
-	Lotto(){
+	public Lotto(){
 		randNums = new int[6];
 	}
 
 
     // 번호 출력
-    void printRandNum() {
+    public void printRandNum() {
         System.out.printf("[ ");
         for(int randNum : randNums) {
             System.out.printf("%d ",randNum);

@@ -1,33 +1,33 @@
-import kr.or.kosa.Person;
-
-class Test{
-	int i;
-	int j;
-	void print() {
-		System.out.println(i);
-	}
-}
-
-public class Ex01_Ref_Type {
-	public static void main(String[] args) {
-		Person person = new Person();
-		person.name = "È«±æµ¿";
-		person.age = 100;
-		person.power = true;
-		
-		person.personPrint();
-		
-		//°á°ú
-		
-		System.out.println(person);
-		//kr.or.kosa.Person@2a18f23c (¿Ö ÄÄÇ»ÅÍ¸¶´Ù °°Áö? => ÀÚ¹ÙÀÇ ·ê¿¡ µû¶ó ¸Þ¸ð¸®°¡ ÀÚµ¿À¸·Î ÇÒ´çµÇ¾î¼­ ±×·³) Á¶ÇÕµÈ ...  ÁÖ¼Ò°ª
-		//kr.or.kosa.person + "@" + 16Áø¼ö°ª
-		System.out.println(person.toString());
-		//toString() Object Á¶»ó°´Ã¼
-		Person person2 = person; // ÁÖ¼Ò°ª ÇÒ´ç, person person2´Â µ¿°Å, °°Àº Áý¿¡ »ì°íÀÖ´Ù
-		System.out.println(person2);
-		if(person==person2) {
-			System.out.println("p1 p2´Â °°Àº ÁÖ¼Ò¿¡ ÀÖ¾î¿ä");
-		}
-	}
-}
+//import kr.or.kosa.Person;
+//
+//class Test{
+//	int i;
+//	int j;
+//	void print() {
+//		System.out.println(i);
+//	}
+//}
+//
+//public class Ex01_Ref_Type {
+//	public static void main(String[] args) {
+//		Person person = new Person();
+//		person.name = "È«ï¿½æµ¿";
+//		person.age = 100;
+//		person.power = true;
+//
+//		person.personPrint();
+//
+//		//ï¿½ï¿½ï¿½
+//
+//		System.out.println(person);
+//		//kr.or.kosa.Person@2a18f23c (ï¿½ï¿½ ï¿½ï¿½Ç»ï¿½Í¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½? => ï¿½Ú¹ï¿½ï¿½ï¿½ ï¿½ê¿¡ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ð¸®°ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò´ï¿½Ç¾î¼­ ï¿½×·ï¿½) ï¿½ï¿½ï¿½Õµï¿½ ...  ï¿½Ö¼Ò°ï¿½
+//		//kr.or.kosa.person + "@" + 16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//		System.out.println(person.toString());
+//		//toString() Object ï¿½ï¿½ï¿½ï¿½Ã¼
+//		Person person2 = person; // ï¿½Ö¼Ò°ï¿½ ï¿½Ò´ï¿½, person person2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö´ï¿½
+//		System.out.println(person2);
+//		if(person==person2) {
+//			System.out.println("p1 p2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼Ò¿ï¿½ ï¿½Ö¾ï¿½ï¿½");
+//		}
+//	}
+//}
