@@ -1,5 +1,7 @@
 package clock;
 
+import java.util.UUID;
+
 public class BatteryCell {
 	private String SerialNumber;
 	public BatteryCell() {
