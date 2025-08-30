@@ -28,9 +28,9 @@ public class DartGun {
 		}
 	}
 	
-	public void setNeedel(int needleCnt) {
+	public void setNeedle(int needleCnt) {
 		int remain = this.needleCnt + needleCnt - MAX_NEDDLE_CNT; //남은 공간 계산
-		if(remain>=MIN_NEDDLE_CNT) {
+		if(remain<=MIN_NEDDLE_CNT) {
 			this.needleCnt+=needleCnt;
 			System.out.println(this.needleCnt+"개 충전 완료");
 		}else {
@@ -40,7 +40,7 @@ public class DartGun {
 	
 	public void setRemainingAnesthetic(int remainingAnesthetic) {
 		int remain = this.remainingAnesthetic + remainingAnesthetic - MAX_REMAININGANCESTHETIC;
-		if(remain>=MIN_REMAININGANCESTHETIC) {
+		if(remain<=MIN_REMAININGANCESTHETIC) {
 			this.remainingAnesthetic+=remainingAnesthetic;
 			System.out.println(this.remainingAnesthetic+"개 충전 완료");
 		}else {
