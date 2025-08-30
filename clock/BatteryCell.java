@@ -6,6 +6,6 @@ public class BatteryCell {
 		SerialNumber = initSerial();
 	}
 	private String initSerial() {
-		return null;
+		return UUID.randomUUID().toString().replace("-", "").substring(0,9);
 	}
 }
