@@ -5,7 +5,7 @@ public class Ex14_Quiz {
 	public static void main(String[] args) {
 		System.out.println("어떤 함수야");
 		System.out.println("100");
-		
+	
 
 		Ssytem.out.println("어떤 함수야");
 		Ssytem.out.println(100);

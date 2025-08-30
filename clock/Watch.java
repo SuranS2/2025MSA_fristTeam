@@ -1,5 +1,4 @@
 package clock;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -26,15 +25,10 @@ public class Watch {
 		return UUID.randomUUID().toString().replace("-", "").substring(0,11);
 	}
 	
-	
-	//기능
-	//시간 확인 기능
 	public void printTime() {
 		System.out.println(LocalDateTime.now());
 	}
-	
-	//날짜 확인 기능
-	public void printDate() {		
+		public void printDate() {		
 		System.out.println(LocalDate.now());
 	}
 }
