@@ -1,0 +1,66 @@
+[33mcommit 5577272ebf941d1739cf6042efa580b3c7bc8f6d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: NaGihyeon <nesd0957@gmail.com>
+Date:   Sat Aug 30 10:02:21 2025 +0900
+
+    bubbleSort
+
+[33mcommit 660e362e4ffaf2e54a36e5432eb8caa037cfce81[m
+Merge: 0f4c766 fbb19a7
+Author: NaGihyeon <nesd0957@gmail.com>
+Date:   Sat Aug 30 10:01:38 2025 +0900
+
+    bubbleSort
+
+[33mcommit 0f4c76697104c8c25259e2a8a9a47cf4e16bf9b7[m
+Author: NaGihyeon <nesd0957@gmail.com>
+Date:   Sat Aug 30 09:45:48 2025 +0900
+
+    create method bubbleSort
+
+[33mcommit fbb19a7bd9921c3285ce2db72257b9eb8c52e1bb[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gmkoo-d3v <gunmohkoo@naver.com>
+Date:   Sat Aug 30 09:29:03 2025 +0900
+
+    valiNum added
+
+[33mcommit 4fc8d511945f7a5e2369591b62be97f0475f336d[m
+Author: JaeGeon-SMU <81796331+JaeGeon-SMU@users.noreply.github.com>
+Date:   Sat Aug 30 00:47:41 2025 +0900
+
+    lotto update && package name change
+
+[33mcommit d5faefdf08f6cf683c9023560c5f7769cb6a4774[m
+Author: JaeGeon-SMU <81796331+JaeGeon-SMU@users.noreply.github.com>
+Date:   Fri Aug 29 19:47:03 2025 +0900
+
+    update gitignore
+
+[33mcommit ba080c6283c35428ad110dbd316ed5dcb4c2c6fc[m
+Author: JaeGeon-SMU <81796331+JaeGeon-SMU@users.noreply.github.com>
+Date:   Fri Aug 29 19:40:12 2025 +0900
+
+    Delete .project
+
+[33mcommit 5ccdb13740ab3c97b54e29da8a90e57d974fcfae[m
+Author: JaeGeon-SMU <81796331+JaeGeon-SMU@users.noreply.github.com>
+Date:   Fri Aug 29 19:40:01 2025 +0900
+
+    Delete .classpath
+
+[33mcommit 474001ae37f54307993c21cafcedee24ee1f1f72[m
+Author: JaeGeon-SMU <81796331+JaeGeon-SMU@users.noreply.github.com>
+Date:   Fri Aug 29 19:38:56 2025 +0900
+
+    add gitignore
+
+[33mcommit bda9f56249884d1963ab57c90f1a934197f52f00[m
+Author: JaeGeon-SMU <81796331+JaeGeon-SMU@users.noreply.github.com>
+Date:   Fri Aug 29 19:33:27 2025 +0900
+
+    create package && create Lotto
+
+[33mcommit d00f87b09cd27b3a147edd1af4ac04d0e7e64c29[m
+Author: JunSu <skyzephyr333@gmail.com>
+Date:   Fri Aug 29 17:25:25 2025 +0900
+
+    Initial commit
