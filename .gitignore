@@ -1,5 +1,6 @@
 .classpath
 .project
+.idea
 # 빌드 결과물 폴더
 /out/
 
