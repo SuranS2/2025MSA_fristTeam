@@ -20,8 +20,10 @@ public class Lotto {
 
     // 랜덤 번호 최대 45번 까지 추출
     public void pickSixRandomNumbers() {
-        for (int i = 0; i < randNums.length; i++) {
-            randNums[i] = (int) (Math.random() * 45 + 1);
+        while(validDupNum()) {
+            for (int i = 0; i < randNums.length; i++) {
+                randNums[i] = (int) (Math.random() * 45 + 1);
+            }
         }
     }
 	
