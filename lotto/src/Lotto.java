@@ -1,7 +1,10 @@
+package lotto.src;
+
 import java.util.Random;
 
 public class Lotto {
 	private int[] randNums; //로또 번호
+	int n;
 	
 	Lotto(){
 		randNums = new int[] {1,2,3,4,5,6};

@@ -1,31 +1,31 @@
-class Car{ 	//class Car extends Object »ý·«
-	// Car ºÎ¸ð´Â Object
-	// Object ²¨´Â ³»²¨ (»ó¼Ó°ü°è¿¡¼­)
-}
-class GrandFather{
-	public int gmoney = 5000;
-	public GrandFather(){
-		System.out.println("GrandFather »ý¼ºÀÚ");
-	}
-}
-class Father extends GrandFather{
-	public int fmoney = 3000;
-	public Father(){
-		System.out.println("Father »ý¼ºÀÚ");
-	}
-}
-class Child extends Father{
-	public int cmoney = 100;
-	public Child(){
-		System.out.println("Child »ý¼ºÀÚ");
-	}
-}
-
-public class Ex01_Inherit{
-	public static void main(String[] args){
-		Child child = new Child();
-		System.out.println(child.gmoney);
-		System.out.println(child.fmoney);
-		System.out.println(child.cmoney);
-	}
-}
+//class Car{ 	//class Car extends Object ï¿½ï¿½ï¿½ï¿½
+//	// Car ï¿½Î¸ï¿½ï¿½ Object
+//	// Object ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½Ó°ï¿½ï¿½è¿¡ï¿½ï¿½)
+//}
+//class GrandFather{
+//	public int gmoney = 5000;
+//	public GrandFather(){
+//		System.out.println("GrandFather ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+//	}
+//}
+//class Father extends GrandFather{
+//	public int fmoney = 3000;
+//	public Father(){
+//		System.out.println("Father ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+//	}
+//}
+//class Child extends Father{
+//	public int cmoney = 100;
+//	public Child(){
+//		System.out.println("Child ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+//	}
+//}
+//
+//public class Ex01_Inherit{
+//	public static void main(String[] args){
+//		Child child = new Child();
+//		System.out.println(child.gmoney);
+//		System.out.println(child.fmoney);
+//		System.out.println(child.cmoney);
+//	}
+//}
