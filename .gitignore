@@ -1,2 +1,7 @@
 .classpath
 .project
+# 빌드 결과물 폴더
+/out/
+
+# IntelliJ IDEA 모듈 파일
+*.iml
