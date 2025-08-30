@@ -4,8 +4,11 @@ public class LottoApp {
 
 	public static void main(String[] args) {
 		Lotto lotto = new Lotto();
-        lotto.pickSixRandomNumbers();
-		lotto.printRandNum();
+        lotto.bubbleSort(lotto.pickSixRandomNumbers());
+        lotto.printRandNum();
+
+
+
 
 	}
 

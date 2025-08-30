@@ -1,7 +1,7 @@
 package lotto;
 
 public class Lotto {
-	private int[] randNums; //로또 번호
+	public int[] randNums; //로또 번호
 	
 	Lotto(){
 		randNums = new int[6];
@@ -19,12 +19,13 @@ public class Lotto {
 
 
     // 랜덤 번호 최대 45번 까지 추출
-    public void pickSixRandomNumbers() {
+    public int[] pickSixRandomNumbers() {
         while(validDupNum()) {
             for (int i = 0; i < randNums.length; i++) {
                 randNums[i] = (int) (Math.random() * 45 + 1);
             }
         }
+        return randNums;
     }
 	
 	public int[] bubbleSort(int[] arr) {
