@@ -7,6 +7,7 @@ public class Lotto {
 		randNums = new int[6];
 	}
 
+
     // 번호 출력
     void printRandNum() {
         System.out.printf("[ ");
@@ -18,10 +19,35 @@ public class Lotto {
 
 
     // 랜덤 번호 최대 45번 까지 추출
-    private void pickSixRandomNumbers() {
+    public void pickSixRandomNumbers() {
         for (int i = 0; i < randNums.length; i++) {
             randNums[i] = (int) (Math.random() * 45 + 1);
         }
     }
+	
+	public int[] bubbleSort(int[] arr) {
+		for(int i=arr.length-1; i>0; i--) {
+			for(int j=0; j<i; j++) {
+				if(arr[j]>arr[j+1]) {
+					int tmp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = tmp;
+				}
+			}
+		}
+		return arr;
+	}
+	
+	// 번호 확인
+	void valiNum(int[] randNums){
+		for(int i=0; i<randNums.length;i++){
+			for(int j=0; j<i; j++){
+				if(randNums[i] == randNums[j]){
+					i--;
+					break;
+				}
+			}
+		}
+	}
 
 }
