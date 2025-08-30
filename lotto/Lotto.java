@@ -28,6 +28,7 @@ public class Lotto {
 			}
 		}
 		return arr;
+	}
 	
 	// 번호 확인
 	void valiNum(int[] randNums){
