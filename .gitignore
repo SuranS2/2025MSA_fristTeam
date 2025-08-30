@@ -6,3 +6,5 @@
 
 # IntelliJ IDEA 모듈 파일
 *.iml
+/.metadata/
+/.recommenders/

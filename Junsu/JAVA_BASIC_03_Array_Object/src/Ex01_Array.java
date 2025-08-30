@@ -1,86 +1,86 @@
-import java.util.Arrays;
-
-public class Ex01_Array {
-
-	public static void main(String[] args) {
-		int s, s2, s3, s4;
-		int s5;
-		int s6;
-		int s7;
-		// °°Àº Å¸ÀÔÀÇ º¯¼ö ¿©·¯°³¸¦ ¼±¾ðÇØ¼­ »ç¿ë
-		
-		//¹è¿­
-		int[] score = new int[5];
-		// score 101µ¿ >> 101È£, 102È£, 103È£
-		//int Å¸ÀÔÀ» °¡Áö´Â ¹æ 5°³ >> heap >> ¿¬¼ÓµÈ °ø°£ >> ¹æÀÌ¸§ index(Ã·ÀÚ) >> [0][1][2][3][4]
-		
-		System.out.println(score[0]);
-		score[0] = 100;
-		score[1] = 200;
-		score[2] = 300;
-		score[3] = 400;
-		score[4] = 500;
-//		score[5] = 600; // ArrayIndexOutOfBoundsException
-		
-		System.out.println(score[3]);
-		//Array ¹æ¿¡ ÀÖ´Â ¸ðµç °ªÀ» ÇÑ ¹ø¿¡ Ãâ·Â
-		for(int i = 0 ; i < 5 ; i++) {
-			System.out.printf("[%d]=%d\t", i , score[i]);
-		}
-		System.out.println();
-		//¹è¿­Àº °´Ã¼´Ù
-		//»ç¿ëÀÚ ¸¸µå´Â ¸ðµç¹è¿­Àº Object »ó¼Ó
-		for(int i = 0 ; i < score.length ; i++) { // Object.length´Â °´Ã¼ ±æÀÌ¸¦ Ãâ·ÂÇØÁÖ´Â ¸Þ¼Òµå
-			System.out.printf("[%d]=%d\t", i , score[i]);
-		}
-		//java.utils.Arrays Helper Å¬·¡½º
-		//for¹®À» ¸ô¶óµµ Arrays ÇïÆÛ Å¬·¡½º¿¡¼­ ÀÚµ¿À¸·Î º¯È¯½ÃÄÑÁÜ - ¹è¿­ ÀÚ·áÇüÀ» String Å¬·¡½º º¯È¯
-		String resultArray = Arrays.toString(score);
-		System.out.println(resultArray);
-	
-	//ÁÖ¸» (¹öºí , Äü Á¤·Ä ¿¬½À)
-	//ÃÊ±Þ ½ÃÇè(¹öºíÁ¤·Ä) swap
-	
-	//Today Point(Ã³À½ ÇÏ½Ã´Â ºÐ ¾Ï±â)
-	//3°¡Áö
-	int[] arr = new int[5];
-	int[] arr2 = new int[] {10,20,30,40,50}; // ÃÊ±â°ªÀ» ÅëÇØ¼­ ¹è¿­ÀÇ °³¼ö¸¦ Á¤ÀÇÇÏ°í °ªÀ» ÇÒ´ç
-	int[] arr3 = {11 , 22, 33}; //ÄÄÆÄÀÏ·¯°¡ ¾Ë¾Æ¼­ new¸¦ ºÙÀÌ°í Ã³¸®, °ª¸¸ ÁÖ¾î ÃÊ±âÈ­
-	
-	//TIP Javascript const arr = [1,2,3,4,5]; 
-	// let arr=[] arr.push(10) , arr.pop() Javascript ¹è¿­Àº ½ºÅÃ±¸Á¶
-	// Javascript´Â ÀüºÎ µ¿Àû¹è¿­ÀÓ
-	
-	for(int i = 0 ; i < arr2.length ; i++){
-		System.out.println(arr2[i]);
-	}
-	
-	//¹è¿­Àº °´Ã¼´Ù
-	int[] arr4; //null (ÁÖ¼Ò°ª) ¸Þ¸ð¸®¸¦ °¡Áö°í ÀÖÁö ¾Ê¾Æ¿ä
-	arr4 = new int[] {1,2,3,4,5};
-	
-	System.out.println(arr4); // arr4ÀÇ ÁÖ¼Ò ³ª¿È
-	int[] arr5 = arr4; //ÁÖ¼Ò°ª ÇÒ´ç
-	System.out.println(arr4 == arr5);
-	
-	//¹è¿­ÀÇ Å¸ÀÔÀº 8 + 1 + Å¬·¡½º µîµî...
-	String[] strarr = new String[] {"°¡", "³ª", "´Ù", "¶ó"};
-	for(int j = 0; j < strarr.length ; j++){
-		System.out.println(strarr[j]);
-	}
-	
-	char[] carr = {'A','B'};
-	float[] farr = {3.14f,0.12f};
-	//Today Point °´Ã¼ ¹è¿­
-
-	//Today Point °´Ã¼ ¹è¿­
-	Car[] cars = new Car[3];
-	cars[0] = new Car();
-	cars[1] = new Car();
-	cars[2] = new Car();
-	}
-}
-
-class Car{
-	int door;
-}
+//import java.util.Arrays;
+//
+//public class Ex01_Array {
+//
+//	public static void main(String[] args) {
+//		int s, s2, s3, s4;
+//		int s5;
+//		int s6;
+//		int s7;
+//		// ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½
+//
+//		//ï¿½è¿­
+//		int[] score = new int[5];
+//		// score 101ï¿½ï¿½ >> 101È£, 102È£, 103È£
+//		//int Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 5ï¿½ï¿½ >> heap >> ï¿½ï¿½ï¿½Óµï¿½ ï¿½ï¿½ï¿½ï¿½ >> ï¿½ï¿½ï¿½Ì¸ï¿½ index(Ã·ï¿½ï¿½) >> [0][1][2][3][4]
+//
+//		System.out.println(score[0]);
+//		score[0] = 100;
+//		score[1] = 200;
+//		score[2] = 300;
+//		score[3] = 400;
+//		score[4] = 500;
+////		score[5] = 600; // ArrayIndexOutOfBoundsException
+//
+//		System.out.println(score[3]);
+//		//Array ï¿½æ¿¡ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+//		for(int i = 0 ; i < 5 ; i++) {
+//			System.out.printf("[%d]=%d\t", i , score[i]);
+//		}
+//		System.out.println();
+//		//ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½
+//		//ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½è¿­ï¿½ï¿½ Object ï¿½ï¿½ï¿½
+//		for(int i = 0 ; i < score.length ; i++) { // Object.lengthï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Þ¼Òµï¿½
+//			System.out.printf("[%d]=%d\t", i , score[i]);
+//		}
+//		//java.utils.Arrays Helper Å¬ï¿½ï¿½ï¿½ï¿½
+//		//forï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Arrays ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½è¿­ ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ String Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+//		String resultArray = Arrays.toString(score);
+//		System.out.println(resultArray);
+//
+//	//ï¿½Ö¸ï¿½ (ï¿½ï¿½ï¿½ï¿½ , ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
+//	//ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) swap
+//
+//	//Today Point(Ã³ï¿½ï¿½ ï¿½Ï½Ã´ï¿½ ï¿½ï¿½ ï¿½Ï±ï¿½)
+//	//3ï¿½ï¿½ï¿½ï¿½
+//	int[] arr = new int[5];
+//	int[] arr2 = new int[] {10,20,30,40,50}; // ï¿½Ê±â°ªï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò´ï¿½
+//	int[] arr3 = {11 , 22, 33}; //ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ ï¿½Ë¾Æ¼ï¿½ newï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ Ã³ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ ï¿½Ê±ï¿½È­
+//
+//	//TIP Javascript const arr = [1,2,3,4,5];
+//	// let arr=[] arr.push(10) , arr.pop() Javascript ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½
+//	// Javascriptï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½è¿­ï¿½ï¿½
+//
+//	for(int i = 0 ; i < arr2.length ; i++){
+//		System.out.println(arr2[i]);
+//	}
+//
+//	//ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½
+//	int[] arr4; //null (ï¿½Ö¼Ò°ï¿½) ï¿½Þ¸ð¸®¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¾Æ¿ï¿½
+//	arr4 = new int[] {1,2,3,4,5};
+//
+//	System.out.println(arr4); // arr4ï¿½ï¿½ ï¿½Ö¼ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	int[] arr5 = arr4; //ï¿½Ö¼Ò°ï¿½ ï¿½Ò´ï¿½
+//	System.out.println(arr4 == arr5);
+//
+//	//ï¿½è¿­ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ 8 + 1 + Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½...
+//	String[] strarr = new String[] {"ï¿½ï¿½", "ï¿½ï¿½", "ï¿½ï¿½", "ï¿½ï¿½"};
+//	for(int j = 0; j < strarr.length ; j++){
+//		System.out.println(strarr[j]);
+//	}
+//
+//	char[] carr = {'A','B'};
+//	float[] farr = {3.14f,0.12f};
+//	//Today Point ï¿½ï¿½Ã¼ ï¿½è¿­
+//
+//	//Today Point ï¿½ï¿½Ã¼ ï¿½è¿­
+//	Car[] cars = new Car[3];
+//	cars[0] = new Car();
+//	cars[1] = new Car();
+//	cars[2] = new Car();
+//	}
+//}
+//
+//class Car{
+//	int door;
+//}

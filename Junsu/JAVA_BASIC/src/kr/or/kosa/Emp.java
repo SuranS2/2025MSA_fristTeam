@@ -1,15 +1,15 @@
-package kr.or.kosa;
-
-public class Emp {
-	//main ÇÔ¼ö°¡ ¾ø´Ù
-
-	
-	//»ç¿øÀº »ç¿ø¹øÈ£¿Í ÀÌ¸§À» °¡Áö°í ÀÖ´Ù(ÇÊµå)
-	public int empno;
-	public String ename;
-	private int data=0;
-	
-	public void Info() {
-		System.out.println(this.empno+"/"+this.data);
-	}
-}
+//package kr.or.kosa;
+//
+//public class Emp {
+//	//main ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//
+//
+//	//ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½(ï¿½Êµï¿½)
+//	public int empno;
+//	public String ename;
+//	private int data=0;
+//
+//	public void Info() {
+//		System.out.println(this.empno+"/"+this.data);
+//	}
+//}
