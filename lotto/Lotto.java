@@ -2,6 +2,7 @@ package lotto;
 
 public class Lotto {
 	private int[] randNums; //로또 번호
+	int n;
 	
 	Lotto(){
 		randNums = new int[6];
@@ -40,15 +41,12 @@ public class Lotto {
 	}
 	
 		// 번호 확인
-	boolean validDupNum(){
-		
+	boolean validDupNum(int n){		
 		//배열로 새로들어올 숫자를 기존배열에서 중복되는지 확인후 중복되면 true 종복안되면 false 로 반환
-		for(int i=0; i<randNums.length;i++){
-			for(int j=0; j<randNums.length; j++){
-				if(randNums[i] == randNums[j]){ 
+		for(int i=0; i<n;i++){			
+			if(randNums[i] == randNums[n]){ 
 					return true;
-				}
-			}
+				}			
 		} 
 		return false;
 	}
