@@ -10,6 +10,9 @@ public class Watch {
 	//부품
 	private Battery battery;
 	private Display display;
+	private DartGun dartGun;
+	private Gps gps;
+	private Radio radio;
 	
 	public Watch() {
 		this("소유자");
@@ -19,24 +22,24 @@ public class Watch {
 		this.watchSerialNum = createWatchSerialNum();
 		this.watchSize = 28;
 		this.ownerName = ownerName;
-		
-		//this.battery = new Battery();
+		this.battery = new Battery(new BatteryCell[] {new BatteryCell(),new BatteryCell()});
 		this.display = new Display();
-		
+		this.dartGun = new DartGun();
+		this.gps = new Gps();
+		this.radio = new Radio();
 	}
 	
 	private String createWatchSerialNum(){
 		return UUID.randomUUID().toString().replace("-", "").substring(0,11);
 	}
 	
-	/*
+	//battery 함수 접근
 	public void chargeBattery() {
 		this.battery.charging(battery);
 	}
 	public void changeBattery() {
 		this.battery.change(battery);
 	}
-	*/
 	
 	//Display 클래스 함수 접근
 	public void brightnessUp() {
@@ -52,7 +55,28 @@ public class Watch {
 		this.display.changeBlockBlueLight();
 	}
 	
+	//마취총 클래스 함수 접근
+	public void shootNeedle() {
+		this.dartGun.shootNeedle();
+	}
+	public void setNeedle(int needleCnt) {
+		this.dartGun.setNeedel(needleCnt);
+	}
+	public void shootNeedle(int remainingAnesthetic) {
+		this.dartGun.setRemainingAnesthetic(remainingAnesthetic);
+	}
 	
+	//gps 클래스 함수 접근
+	public void gpsUpdate(double lon, double lat) {
+		this.gps.gpsUpdate(lon, lat);
+	}
+	
+	//radio 클래스 함수 접근
+	public void HertzToTime(int Hertz) {
+		this.radio.HertzToTime(Hertz);
+	}
+	
+	//시계 고유 기능
 	public void printTime() {
 		System.out.println(LocalDateTime.now());
 	}

@@ -17,7 +17,7 @@ public class Battery {
 	public void charging(Battery battery) {
 		if(0<= battery.chargingPercent && battery.chargingPercent <=95 ) {
 			battery.chargingPercent += 5;
-			System.out.println("5%����... ���� ������" + battery.chargingPercent);
+			System.out.println("5% charging" + battery.chargingPercent);
 		}
 	}
 	public void change(Battery battery) {

@@ -1,3 +1,5 @@
+package clock;
+
 public class Gps {
 // double 위도 double 경도
 double lon; 
